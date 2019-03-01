@@ -1,0 +1,42 @@
+<resources>
+    <!--
+strings.xml
+    This is the string resource file that holds all of the colors I use
+
+    Created by Gary Baker
+    Created on 2/18/2019
+    Last modified by Gary Baker
+    Last modified on 3/1/2019
+
+    This is for the final project in CA290 Android.
+    It is part of StarChartProject and it refers to activity_star_chart_main.xml, and every month's xml file
+
+-->
+    <string name="app_name">StarChartProject</string>
+
+
+    <!-- These are the strings for the Names of the Months. They will be used more than once. -->
+
+    <string name="january_txt">January</string>
+    <string name="february_txt">February</string>
+    <string name="march_txt">March</string>
+    <string name="april_txt">April</string>
+    <string name="may_txt">May</string>
+    <string name="june_txt">June</string>
+    <string name="july_txt">July</string>
+    <string name="august_txt">August</string>
+    <string name="september_txt">September</string>
+    <string name="october_txt">October</string>
+    <string name="november_txt">November</string>
+    <string name="december_txt">December</string>
+
+
+
+    <!-- This is the other various Resource strings -->
+    <string name="title_txt">SkyCharts 2019</string>
+    <string name="subtitle_txt">All SkyCharts are from WhatsOutTonight.com
+        Optimized for use 90 minutes after sunset.</string>
+    <string name="label_txt">StarCharts</string>
+
+
+</resources>

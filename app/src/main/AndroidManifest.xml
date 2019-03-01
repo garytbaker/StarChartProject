@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="edu.indiana.garybake.starchartproject">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/label_txt"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".StarChartMainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".JanuaryActivity" />
+        <activity android:name=".FebruaryActivity" />
+        <activity android:name=".MarchActivity" />
+        <activity android:name=".AprilActivity" />
+        <activity android:name=".MayActivity" />
+        <activity android:name=".JuneActivity" />
+        <activity android:name=".JulyActivity" />
+        <activity android:name=".AugustActivity" />
+        <activity android:name=".SeptemberActivity" />
+        <activity android:name=".OctoberActivity" />
+        <activity android:name=".NovemberActivity" />
+        <activity android:name=".DecemberActivity"></activity>
+    </application>
+
+</manifest>

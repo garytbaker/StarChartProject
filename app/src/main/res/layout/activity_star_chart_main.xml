@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+ activity_sar_chart_main.xml
+    This is the layout file for the my StarChart project. This is the layout of the buttons on the main menu
+
+    Created by Gary Baker
+    Created on 2/24/2019
+    Last modified by Gary Baker
+    Last modified on 3/1/2019
+
+    This is for the final project in CA290 Android.
+    It is part of StarChartProject and it refers to strings.xml, colors.xml and StarChartMainActivity.java
+
+-->
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    tools:context=".StarChartMainActivity">
+    <!-- This is the table of all of the buttons in the grid of months. There is a button in each month. It has four row with three columns each.
+     The months go across and then to the start of the next row-->
+    <TableLayout
+        android:id="@+id/tbl_month"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.69">
+
+        <!-- This is a good example row to show how the buttons are laid out -->
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!-- each button uses a string resource file that is later reused as the title of that month's activity -->
+            <Button
+                android:id="@+id/btn_january"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/january_txt" />
+
+            <Button
+                android:id="@+id/btn_february"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/february_txt"
+                android:textAllCaps="true" />
+
+            <Button
+                android:id="@+id/btn_march"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/march_txt" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/btn_april"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/april_txt" />
+
+            <Button
+                android:id="@+id/btn_may"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/may_txt" />
+
+            <Button
+                android:id="@+id/btn_june"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/june_txt" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="188dp">
+
+            <Button
+                android:id="@+id/btn_july"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/july_txt" />
+
+            <Button
+                android:id="@+id/btn_august"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/august_txt" />
+
+            <Button
+                android:id="@+id/btn_september"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/september_txt" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="188dp">
+
+            <Button
+                android:id="@+id/btn_october"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/october_txt" />
+
+            <Button
+                android:id="@+id/btn_november"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/november_txt" />
+
+            <Button
+                android:id="@+id/btn_december"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/december_txt" />
+        </TableRow>
+
+
+    </TableLayout>
+
+<!-- this is the title of the main page. I changed the size to make it bigger and I bolded it, as well as changed its color to make a better contrast to the background -->
+    <TextView
+        android:id="@+id/txt_main_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/title_txt"
+        android:textAllCaps="false"
+        android:textAppearance="@android:style/TextAppearance.Large"
+        android:textColor="@color/title_color"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.060000002" />
+
+    <!-- this is the subtitle that says where the starcharts are from and it also has the same color as the main title -->
+    <TextView
+        android:id="@+id/txt_subtitle"
+        android:layout_width="252dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/subtitle_txt"
+        android:textAlignment="center"
+        android:textAppearance="@android:style/TextAppearance.Small"
+        android:textColor="@color/title_color"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_main_title"
+        app:layout_constraintVertical_bias="0.021" />
+</android.support.constraint.ConstraintLayout>

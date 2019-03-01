@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+colors.xml
+    This is the color resource file that holds all of the colors I use
+
+    Created by Gary Baker
+    Created on 2/18/2019
+    Last modified by Gary Baker
+    Last modified on 3/1/2019
+
+    This is for the final project in CA290 Android.
+    It is part of StarChartProject and it refers to activity_star_chart_main.xml, and every month's xml file
+
+-->
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <!-- Colors I have added myself -->
+    <color name="background_color">#3B3E8B</color>
+    <color name="title_color">#CDCDCD</color>
+</resources>

@@ -1,0 +1,10 @@
+SkyCharts User Guide
+
+Upon opening the application you will arrive at the main page. This is the menu with a 4x3 grid of buttons labeled for each month. 
+Click on the month whose star chart you would like to view.
+After you click on the month, It will take you to the designated star chart's month page.
+Here there are three things, a back button in the top left corner, the star chart, and a sliding bar on the bottom.
+To use a star chart, you align the direction that you are looking at to the bottom of the chart.
+You can use the sliding bar to rotate the chart in order to align the bottom to the way you are looking.
+When you are done, you can hit the back button and it will take you to the main menu to try out a new month.
+

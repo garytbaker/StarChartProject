@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ activity_june.xml
+    This is the layout file for the my StarChart project for the month of june. It contains a starchart for that month as well as a seekbar and a back button
+
+    Created by Gary Baker
+    Created on 2/18/2019
+    Last modified by Gary Baker
+    Last modified on 3/1/2019
+
+    This is for the final project in CA290 Android.
+    It is part of StarChartProject and it refers to strings.xml, colors.xml and activity_star_chart_main.xml
+
+-->
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    tools:context=".JuneActivity">
+
+    <!-- This is the back button in the top left hand corner. It has an arrow I created in photoshop and its style is holo. I had to center crop the image for it to fit neatly. -->
+    <ImageButton
+        android:id="@+id/back_img_btn"
+        style="@android:style/Widget.Holo.ImageButton"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/back_arrow" />
+    <!-- This is the title of the month. it is set to be centered near the top of the page and it is large with a changed color. -->
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/june_txt"
+        android:textAlignment="center"
+        android:textAppearance="@android:style/TextAppearance.Large"
+        android:textColor="@color/title_color"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.04000002" />
+
+    <!-- This is the image of the skychart. I found the skychart on WhatsOutTonight.com and then photoshoped it to make it fit the project. -->
+    <ImageView
+        android:id="@+id/imgview_June"
+        android:layout_width="314dp"
+        android:layout_height="461dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.36"
+        app:srcCompat="@drawable/june_sky_chart" />
+
+    <!-- This is the SeekBar. It is discreet atr 360 intervals so there is one for each degree. it will later be used to rotate the skyChart -->
+    <SeekBar
+        android:id="@+id/rotation_changer"
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:layout_width="317dp"
+        android:layout_height="15dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:max="360"
+        android:progress="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.94" />
+
+
+</android.support.constraint.ConstraintLayout>
